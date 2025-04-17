@@ -148,10 +148,10 @@ const AboutPage = () => {
                 </h1>
                 <div className="space-y-6">
                   <p className="text-gray-700 text-lg">
-                    We're a global tech services provider powering digital transformation for businesses of all sizes, from startups to Fortune 100 leaders in retail, CPG, and beyond.
+                    We&apos;re a global tech services provider powering digital transformation for businesses of all sizes, from startups to Fortune 100 leaders in retail, CPG, and beyond.
                   </p>
                   <p className="text-gray-700 text-lg">
-                    We're proud to be recognized as trusted partners of both Google Cloud and Microsoft, building strong alliances that enable us to deliver advanced, future-ready solutions backed by deep technical expertise. Our core capabilities span Cloud, Data & AI, custom software development, staff augmentation, and the Microsoft Power Platform. We also offer end-to-end solutions in Microsoft Dynamics 365 ERP and CRM, along with innovative flagship products designed to tackle today's most pressing business challenges
+                    We&apos;re proud to be recognized as trusted partners of both Google Cloud and Microsoft, building strong alliances that enable us to deliver advanced, future-ready solutions backed by deep technical expertise. Our core capabilities span Cloud, Data & AI, custom software development, staff augmentation, and the Microsoft Power Platform. We also offer end-to-end solutions in Microsoft Dynamics 365 ERP and CRM, along with innovative flagship products designed to tackle today&apos;s most pressing business challenges
                   </p>
                 </div>
               </div>

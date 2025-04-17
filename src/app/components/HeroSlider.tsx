@@ -205,7 +205,7 @@ const HeroSlider = () => {
                         className="group px-8 py-3 bg-gradient-to-r from-indigo-500 to-violet-500 text-white rounded-md font-medium transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-indigo-500/25"
                       >
                         <span className="flex items-center gap-2">
-                          Let's Talk
+                          Let&apos;s Talk
                           <motion.span
                             animate={{ x: [0, 5, 0] }}
                             transition={{ duration: 1, repeat: Infinity }}
