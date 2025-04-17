@@ -9,7 +9,6 @@ export default function Home() {
     <main>
       <Navbar />
       <HeroSlider />
-      <Journey />
       <Footer />
     </main>
   );
