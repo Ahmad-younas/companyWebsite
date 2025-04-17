@@ -1,16 +1,13 @@
-import Image from "next/image";
-import Footer from "./components/Footer";
-import AboutPage from "./components/AboutPage";
-import Navbar from "./components/Navbar";
+'use client';
+
 import HeroSlider from './components/HeroSlider';
+import Journey from './components/Journey';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navbar />
+    <main>
       <HeroSlider />
-      <h1>Welcome to Confiz</h1>
-      <Footer />
+      <Journey />
     </main>
   );
 }

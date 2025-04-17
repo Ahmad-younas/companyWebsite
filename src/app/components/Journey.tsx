@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 
 const Journey = () => {
   // Duplicate logos array for seamless loop

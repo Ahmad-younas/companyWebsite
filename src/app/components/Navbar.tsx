@@ -362,8 +362,8 @@ const Navbar = () => {
                         </div>
 
                         <div className="mt-8 bg-gray-50 p-6 rounded-lg">
-                          <h3 className="text-lg font-semibold mb-2 text-gray-900">What's New?</h3>
-                          <p className="text-sm text-gray-600 mb-4">Streamlined ABB's operations with Salesforce and Azure integration.</p>
+                          <h3 className="text-lg font-semibold mb-2 text-gray-900">What&apos;s New?</h3>
+                          <p className="text-sm text-gray-600 mb-4">Streamlined ABB&apos;s operations with Salesforce and Azure integration.</p>
                           <Link 
                             href="/case-studies/abb"
                             className="text-blue-600 hover:text-blue-800 text-sm font-medium inline-flex items-center"

@@ -124,7 +124,7 @@ const AboutPage = () => {
             <div className="text-white py-0">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
               <p className="text-xl md:text-3xl text-white max-w-2xl">
-              Creating lasting business impact through forward-thinking technology and human-focused design.
+                Creating lasting business impact through forward-thinking technology and human-focused design.
               </p>
             </div>
           </div>
@@ -229,11 +229,11 @@ const AboutPage = () => {
                 
                 <div className="space-y-6">
                   <p className="text-gray-700 text-lg leading-relaxed">
-                  At Confiz, our mission extends beyond business success—we strive to set a benchmark for excellence and innovation in Pakistan's IT industry by fostering a culture of continuous learning, collaboration, and advanced technology adoption.
+                  At Confiz, our mission extends beyond business success—we strive to set a benchmark for excellence and innovation in Pakistan&apos;s IT industry by fostering a culture of continuous learning, collaboration, and advanced technology adoption.
                   </p>
                   
                   <p className="text-gray-700 text-lg leading-relaxed">
-                  Of course! Here's a refined and more concise version of that statement:
+                  Of course! Here&apos;s a refined and more concise version of that statement:
 
                   Confiz is dedicated to cultivating a supportive environment for its exceptional talent, empowering our team to push boundaries and deliver impactful solutions. By investing in our people and embracing a forward-thinking mindset, we enhance client outcomes while contributing to the broader community and the future of technology in Pakistan.
                   </p>
@@ -292,7 +292,7 @@ const AboutPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to Transform Your Business?</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Let's discuss how you can achieve your business goals through our technology solutions.
+              Let&apos;s discuss how you can achieve your business goals through our technology solutions.
             </p>
             <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
               Contact Us
