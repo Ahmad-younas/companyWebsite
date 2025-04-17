@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-export const useCounterAnimation = (end: number, duration: number = 2000) => {
+export const useCounterAnimation = (end: number) => {
   const [count, setCount] = useState(0);
   const countRef = useRef<HTMLDivElement>(null);
 
