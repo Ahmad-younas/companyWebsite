@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 export const useCounterAnimation = (end: number, duration: number = 2000) => {
   const [count, setCount] = useState(0);
   const countRef = useRef<HTMLDivElement>(null);
-  const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
     const element = countRef.current;
@@ -19,7 +18,7 @@ export const useCounterAnimation = (end: number, duration: number = 2000) => {
           let currentStep = 0;
           const interval = setInterval(() => {
             currentStep++;
-            setCount((prev) => {
+            setCount(() => {
               const nextCount = Math.min(Math.round(increment * currentStep), end);
               return nextCount;
             });
@@ -45,24 +44,6 @@ export const useCounterAnimation = (end: number, duration: number = 2000) => {
       }
     };
   }, [end]);
-
-  useEffect(() => {
-    if (!isInView) return;
-
-    let startTimestamp: number | null = null;
-    const step = (timestamp: number) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      
-      setCount(Math.floor(progress * end));
-      
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-
-    window.requestAnimationFrame(step);
-  }, [end, duration, isInView]);
 
   return { count, countRef };
 }; 
