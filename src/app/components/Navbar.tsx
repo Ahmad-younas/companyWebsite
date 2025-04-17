@@ -381,7 +381,7 @@ const Navbar = () => {
               href="/contact"
               className="bg-blue-900 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-800 transition-colors duration-200"
             >
-              Let's Talk
+              Let&apos;s Talk
             </Link>
           </div>
 
@@ -493,7 +493,7 @@ const Navbar = () => {
               className="bg-blue-900 text-white block px-3 py-2 rounded-md text-base font-medium text-center hover:bg-blue-800 transition-colors duration-200 mt-4"
               onClick={() => setIsOpen(false)}
             >
-              Let's Talk
+              Let&apos;s Talk
             </Link>
           </div>
         </div>

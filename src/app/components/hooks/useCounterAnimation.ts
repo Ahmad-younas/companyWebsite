@@ -6,25 +6,45 @@ export const useCounterAnimation = (end: number, duration: number = 2000) => {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
+    const element = countRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsInView(true);
+          setCount(0);
+          const duration = 2000;
+          const steps = 60;
+          const increment = end / steps;
+          const stepDuration = duration / steps;
+
+          let currentStep = 0;
+          const interval = setInterval(() => {
+            currentStep++;
+            setCount((prev) => {
+              const nextCount = Math.min(Math.round(increment * currentStep), end);
+              return nextCount;
+            });
+
+            if (currentStep >= steps) {
+              clearInterval(interval);
+            }
+          }, stepDuration);
+
+          return () => clearInterval(interval);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
-    if (countRef.current) {
-      observer.observe(countRef.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (countRef.current) {
-        observer.unobserve(countRef.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
-  }, []);
+  }, [end]);
 
   useEffect(() => {
     if (!isInView) return;

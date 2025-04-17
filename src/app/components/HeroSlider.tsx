@@ -68,14 +68,15 @@ const HeroSlider = () => {
   const mouseYSpring = useSpring(mouseY, springConfig);
 
   useEffect(() => {
+    const container = containerRef.current;
     const handleMouseMove = (e: MouseEvent) => {
-      const { left, top } = containerRef.current?.getBoundingClientRect() ?? { left: 0, top: 0 };
+      const { left, top } = container?.getBoundingClientRect() ?? { left: 0, top: 0 };
       mouseX.set(e.clientX - left);
       mouseY.set(e.clientY - top);
     };
 
-    containerRef.current?.addEventListener('mousemove', handleMouseMove);
-    return () => containerRef.current?.removeEventListener('mousemove', handleMouseMove);
+    container?.addEventListener('mousemove', handleMouseMove);
+    return () => container?.removeEventListener('mousemove', handleMouseMove);
   }, [mouseX, mouseY]);
 
   useEffect(() => {
